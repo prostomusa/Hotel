@@ -20,7 +20,7 @@ services:
     image: uzman
     command: python manage.py migrate --noinput
     volumes:
-      - .:/usr/src/Avito
+      - .:/usr/src/Hotel
     env_file:
       - ./.env.dev
     depends_on:
@@ -30,7 +30,7 @@ services:
     image: uzman
     command: python manage.py makemigrations --noinput
     volumes:
-      - .:/usr/src/Avito
+      - .:/usr/src/Hotel
     env_file:
       - ./.env.dev
     depends_on:
